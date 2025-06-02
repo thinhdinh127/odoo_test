@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  web:
+    image: odoo:14
+    ports:
+      - "8069:8069"
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+    environment:
+      - HOST=dpg-d0uk4iu3jp1c738809rg-a
+      - USER=thinhdinh
+      - PASSWORD=WosCE3dfMF8dz4En9i0RT9NdPmzx0eGI
+
+volumes:
+  odoo-web-data:
