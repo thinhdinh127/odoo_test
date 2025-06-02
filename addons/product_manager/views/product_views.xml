@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id="view_product_manager_list" model="ir.ui.view">
+            <field name="name">product.manager.list</field>
+            <field name="model">product.manager</field>
+            <field name="arch" type="xml">
+           <list string="Sản phẩm" decoration-info="quantity == 0" decoration-success="quantity > 0">
+    <field name="name"/>
+    <field name="code"/>
+    <field name="price"/>
+    <field name="quantity"/>
+    <field name="category"/>
+    <field name="supplier"/>
+    <field name="active"/>
+</list> 
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_product_manager_form" model="ir.ui.view">
+            <field name="name">product.manager.form</field>
+            <field name="model">product.manager</field>
+            <field name="arch" type="xml">
+                <form string="Sản phẩm">
+                    <header>
+                        <field name="active" widget="boolean_toggle"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Tên sản phẩm"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="price"/>
+                                <field name="quantity"/>
+                            </group>
+                            <group>
+                                <field name="category"/>
+                                <field name="supplier"/>
+                                <field name="date_created"/>
+                                <field name="last_updated"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Mô tả">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="view_product_manager_search" model="ir.ui.view">
+            <field name="name">product.manager.search</field>
+            <field name="model">product.manager</field>
+            <field name="arch" type="xml">
+                <search string="Tìm kiếm sản phẩm">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="category"/>
+                    <field name="supplier"/>
+                    <separator/>
+                    <filter string="Đang hoạt động" name="active" domain="[('active','=',True)]"/>
+                    <filter string="Hết hàng" name="out_of_stock" domain="[('quantity','=',0)]"/>
+                    <filter string="Còn hàng" name="in_stock" domain="[('quantity','>',0)]"/>
+                    <group expand="0" string="Nhóm theo">
+                        <filter string="Danh mục" name="groupby_category" context="{'group_by':'category'}"/>
+                        <filter string="Nhà cung cấp" name="groupby_supplier" context="{'group_by':'supplier'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_product_manager" model="ir.actions.act_window">
+            <field name="name">Sản phẩm</field>
+            <field name="res_model">product.manager</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_product_manager_search"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Tạo sản phẩm đầu tiên
+                </p>
+                <p>
+                    Tạo sản phẩm mới bằng cách nhấn nút Tạo.
+                </p>
+            </field>
+        </record>
+
+        <!-- Menu Items -->
+        <menuitem id="menu_product_manager_root" 
+                  name="Quản lý sản phẩm"
+                  sequence="10"/>
+
+        <menuitem id="menu_product_manager" 
+                  name="Sản phẩm" 
+                  parent="menu_product_manager_root"
+                  action="action_product_manager"
+                  sequence="1"/>
+    </data>
+</odoo>
