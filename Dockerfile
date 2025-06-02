@@ -1,37 +1,18 @@
-# Use official Python base image
-FROM python:3.11-slim
+FROM odoo:18.0
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
+# Cài đặt các dependency nếu có
+USER root
+RUN pip3 install --upgrade pip
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    libsasl2-dev \
-    libldap2-dev \
-    libssl-dev \
-    python3-dev \
-    build-essential \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+# Copy custom modules vào thư mục addons
+COPY . /mnt/extra-addons/
 
-# Set working directory
-WORKDIR /app
+# Chỉnh quyền
+RUN chown -R odoo:odoo /mnt/extra-addons
 
-# Copy only poetry files first (to leverage Docker cache)
-COPY poetry.lock* /app/
+# Trở lại user odoo
+USER odoo
 
-# Install Poetry
-RUN pip install poetry==1.7.1
+# Chạy Odoo với đường dẫn addons bổ sung
+CMD ["odoo", "-d", "odoo_test_db", "--addons-path=/mnt/extra-addons,/usr/lib/python3/dist-packages/odoo/addons", "--dev=all"]
 
-# Install dependencies (without root package)
-RUN poetry install --no-root --no-interaction --no-ansi
-
-# Copy the rest of the app source code
-COPY . /app
-
-# Expose port for Odoo
-EXPOSE 8069
-
-# Start Odoo with poetry
-CMD ["poetry", "run", "python", "odoo-bin", "-c", "odoo.conf"]
