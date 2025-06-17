@@ -296,7 +296,6 @@ class Groups(models.Model):
 
         return result
 
-
 class ResUsersLog(models.Model):
     _name = 'res.users.log'
     _order = 'id desc'

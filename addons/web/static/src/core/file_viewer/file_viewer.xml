@@ -36,6 +36,7 @@
                     <iframe t-if="state.file.isPdf" class="o-FileViewer-view w-75 h-100 border-0" t-ref="iframeViewerPdf" t-att-class="{ 'w-100': ui.isSmall }" t-att-src="state.file.defaultSource"/>
                     <iframe t-if="state.file.isText" class="o-FileViewer-view o-isText o_text w-75 h-100 border-0" t-att-src="state.file.defaultSource"/>
                     <iframe t-if="state.file.isUrlYoutube" allow="autoplay; encrypted-media" class="o-FileViewer-view w-75 h-100 border-0" t-att-src="state.file.defaultSource" height="315" width="560"/>
+                    <iframe t-if="state.file.isDocx || state.file.isExcel" class="o-FileViewer-view w-100 h-100 border-0" t-att-src="state.file.defaultSource" frameborder="0" scrolling="no"/>
                     <video t-if="state.file.isVideo" class="o-FileViewer-view w-75 h-75" t-att-class="{ 'w-100 h-100': ui.isSmall }" t-on-click.stop="" controls="controls">
                         <source t-att-data-type="state.file.mimetype" t-att-src="state.file.defaultSource"/>
                     </video>

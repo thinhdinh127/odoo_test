@@ -29,6 +29,12 @@ export const FileModelMixin = (T) =>
             if (this.isPdf) {
                 return `/web/static/lib/pdfjs/web/viewer.html?file=${encodedRoute}#pagemode=none`;
             }
+            if (this.isDocx) {
+                return `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(window.location.origin + route)}`;
+            }
+            if (this.isExcel) {
+                return `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(window.location.origin + route)}`;
+            }
             if (this.isUrlYoutube) {
                 const urlArr = this.url.split("/");
                 let token = urlArr[urlArr.length - 1];
@@ -70,6 +76,20 @@ export const FileModelMixin = (T) =>
             return this.mimetype && this.mimetype.startsWith("application/pdf");
         }
 
+        get isDocx() {
+            return this.mimetype && (
+                this.mimetype === "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+                this.mimetype === "application/vnd.oasis.opendocument.text"
+            );
+        }
+
+        get isExcel() {
+            return this.mimetype && (
+                this.mimetype === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ||
+                this.mimetype === "application/vnd.oasis.opendocument.spreadsheet"
+            );
+        }
+
         get isText() {
             const textMimeType = [
                 "application/javascript",
@@ -96,7 +116,7 @@ export const FileModelMixin = (T) =>
 
         get isViewable() {
             return (
-                (this.isText || this.isImage || this.isVideo || this.isPdf || this.isUrlYoutube) &&
+                (this.isText || this.isImage || this.isVideo || this.isPdf || this.isUrlYoutube || this.isDocx || this.isExcel) &&
                 !this.uploading
             );
         }
