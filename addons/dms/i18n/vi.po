@@ -1,0 +1,2342 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-24 07:07+0000\n"
+"PO-Revision-Date: 2024-08-14 09:14+0000\n"
+"Last-Translator: tva-subteno-it <tva@subteno.com>\n"
+"Language-Team: none\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_process
+msgid ""
+"                Define how incoming emails are processed:\n"
+"\n"
+"                - Single Files: The email gets attached to the directory "
+"and\n"
+"                all attachments are created as files.\n"
+"\n"
+"                - Subdirectory: A new subdirectory is created for each "
+"email\n"
+"                and the mail is attached to this subdirectory. The "
+"attachments\n"
+"                are created as files of the subdirectory.\n"
+"                "
+msgstr ""
+"                Xác định cách thức xử lý email đến :\n"
+"\n"
+"                - Tệp đơn : Email này được liên kết với thư mục và\n"
+"                tất cả các tệp đính kèm được tạo thành các tệp.\n"
+"\n"
+"                   - Thư mục con : Một thư mục con mới được tạo cho "
+"mỗi email\n"
+"                   và email được đính kèm vào thư mục con này. Các tệp "
+"đính kèm\n"
+"                   được tạo thành các tệp của thư mục con.\n"
+"                "
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/access_groups.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (bản sao)"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "%s Files"
+msgstr "%s Tệp"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "%s Subdirectories"
+msgstr "%s Thư mục con"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Archive"
+msgstr ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Lưu trữ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Unarchive"
+msgstr ""
+"<i class=\"fa fa-archive\"/>\n"
+"                                            Hủy lưu trữ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-download\"/>\n"
+"                                            Download"
+msgstr ""
+"<i class=\"fa fa-download\"/>\n"
+"                                            Tải xuống"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid ""
+"<i class=\"fa fa-exclamation-triangle mr-3\" title=\"Warning\"/>\n"
+"                    <b>ATTENTION:</b> Tips to keep in mind before moving "
+"files:<br/>\n"
+"                    - This change cannot be undone.<br/>\n"
+"                    - Remember that the permissions of the files are those "
+"of the folder that contains it, therefore, it is possible that when you "
+"change it, the permissions will also change.<br/>\n"
+"                    Make this change at your own risk."
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle mr-3\" title=\"Cảnh báo\"/>\n"
+"                    <b>CHÚ Ý:</b> Lời khuyên cần lưu ý trước khi "
+"di chuyển tệp:<br/>\n"
+"                    - Thay đổi này không thể hoàn tác.<br/>\n"
+"                    - Hãy nhớ rằng quyền của các tệp là của "
+"thư mục chứa chúng, do đó có thể khi bạn "
+"thay đổi chúng, quyền cũng sẽ thay đổi.<br/>\n"
+"                    Thực hiện thay đổi này với rủi ro của bạn."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid ""
+"<i class=\"fa fa-external-link\"/>\n"
+"                                            Open"
+msgstr ""
+"<i class=\"fa fa-external-link\"/>\n"
+"                                            Mở"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid ""
+"<i class=\"fa fa-file-o\"/>\n"
+"                                            Files"
+msgstr ""
+"<i class=\"fa fa-file-o\"/>\n"
+"                                            Tệp"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid ""
+"<i class=\"fa fa-folder-o\"/>\n"
+"                                            Directories"
+msgstr ""
+"<i class=\"fa fa-folder-o\"/>\n"
+"                                            Thư mục"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-lock\"/>\n"
+"                                            Lock"
+msgstr ""
+"<i class=\"fa fa-lock\"/>\n"
+"                                            Khóa"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid ""
+"<i class=\"fa fa-pencil-square-o\"/>\n"
+"                                            Edit"
+msgstr ""
+"<i class=\"fa fa-pencil-square-o\"/>\n"
+"                                            Chỉnh sửa"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid ""
+"<i class=\"fa fa-trash-o\"/>\n"
+"                                            Delete"
+msgstr ""
+"<i class=\"fa fa-trash-o\"/>\n"
+"                                            Xóa"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid ""
+"<i class=\"fa fa-unlock-alt\"/>\n"
+"                                            Unlock"
+msgstr ""
+"<i class=\"fa fa-unlock-alt\"/>\n"
+"                                            Mở khóa"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </"
+"span>"
+msgstr ""
+"<span class=\"oe_read_only\">@</span>\n"
+"                                        <span class=\"oe_edit_only\"> @ </"
+"span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_kanban
+msgid "<span>Actions</span>"
+msgstr "<span>Actions</span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+msgid "<span>Documents</span>"
+msgstr "<span>Tài liệu</span>"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid "<span>Operations</span>"
+msgstr "<span>Vận hành</span>"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr ""
+"Một từ điển Python sẽ được đánh giá để cung cấp các giá trị mặc định "
+"khi tạo bản ghi mới cho giá trị tương đương này."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory can't be a root and have a parent directory."
+msgstr ""
+"Thư mục không thể là thư mục gốc và có thư mục cha."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory has to have a parent directory."
+msgstr "Thư mục phải có thư mục cha."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory has to have model in attachment storage."
+msgstr ""
+"Thư mục phải có Mẫu trong bộ lưu trữ tệp đính kèm."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A directory with the same name already exists."
+msgstr "Thư mục cùng tên đã tồn tại."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "A file must have model and resource ID in attachment storage."
+msgstr ""
+"Tệp phải có Mẫu và ID tài nguyên trong bộ lưu trữ tệp đính kèm."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "A file with the same name already exists in this directory."
+msgstr "Tệp cùng tên đã tồn tại trong thư mục này."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "A root directory has to have a storage."
+msgstr "Thư mục gốc phải có bộ lưu trữ."
+
+#. module: dms
+#: model:ir.model,name:dms.model_abstract_dms_mixin
+msgid "Abstract Dms Mixin"
+msgstr "Mixin trừu tượng cho DMS"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Accept Emails from"
+msgstr "Chấp nhận email từ"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_access_groups
+#: model:ir.ui.menu,name:dms.menu_dms_access_groups
+msgid "Access Groups"
+msgstr "Nhóm truy cập"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Access Information"
+msgstr "Thông tin truy cập"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_warning
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_warning
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__access_warning
+msgid "Access warning"
+msgstr "Cảnh báo truy cập"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_07_demo
+msgid "Accounting"
+msgstr "Kế toán"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_needaction
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_needaction
+msgid "Action Needed"
+msgstr "Yêu cầu hành động"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid "Actions"
+msgstr "Hành động"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__active
+#: model:ir.model.fields,field_description:dms.field_dms_tag__active
+msgid "Active"
+msgstr "Đang hoạt động"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_ids
+msgid "Activities"
+msgstr "Hoạt động"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_decoration
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Trang trí ngoại lệ hoạt động"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_state
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_icon
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory
+msgid "Add a new Directory."
+msgstr "Thêm thư mục mới."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_storage_migration
+msgid "Add a new File."
+msgstr "Thêm tệp mới."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_wizard_dms_share__note
+msgid "Add extra content to display in the email"
+msgstr "Thêm nội dung bổ sung để hiển thị trong email"
+
+#. module: dms
+#: model:dms.access.group,name:dms.access_group_01_demo
+msgid "Admin"
+msgstr "Quản trị viên"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_id
+msgid "Alias"
+msgstr "Tên gọi khác"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_contact
+msgid "Alias Contact Security"
+msgstr "Bảo mật liên hệ tương đương"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_domain_id
+msgid "Alias Domain"
+msgstr "Địa chỉ miền thay thế"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_domain
+msgid "Alias Domain Name"
+msgstr "Tên địa chỉ miền thay thế"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_full_name
+msgid "Alias Email"
+msgstr "Email thay thế"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_name
+msgid "Alias Name"
+msgstr "Tên tương đương"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Alias Setting"
+msgstr "Cấu hình tương đương"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_status
+msgid "Alias Status"
+msgstr "Trạng thái tương đương"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_status
+msgid "Alias status assessed on the last message received."
+msgstr "Trạng thái tương đương được đánh giá trên tin nhắn cuối cùng nhận được."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "Alias-Mail-Extraction"
+msgstr "Trích-xuất-Bí-danh-Email"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_model_id
+msgid "Aliased Model"
+msgstr "Mẫu tương đương"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "All"
+msgstr "Tất cả"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "All Files"
+msgstr "Tất cả tệp"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
+#, python-format
+msgid "An error occurred during the upload"
+msgstr "Đã xảy ra lỗi trong quá trình tải lên"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_06_demo
+msgid "Apps"
+msgstr "Ứng dụng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__active
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Archived"
+msgstr "Đã lưu trữ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Archived Files"
+msgstr "Tệp đã lưu trữ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Are you sure? All files will be moved."
+msgstr "Bạn có chắc chắn không? Tất cả tệp sẽ được di chuyển."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model,name:dms.model_ir_attachment
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__attachment
+#, python-format
+msgid "Attachment"
+msgstr "Tệp đính kèm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_attachment_count
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng tệp đính kèm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__attachment_id
+msgid "Attachment File"
+msgstr "Tệp đính kèm"
+
+#. module: dms
+#: model:ir.model,name:dms.model_base
+msgid "Base"
+msgstr "Cơ sở"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_category
+#: model:ir.ui.menu,name:dms.menu_dms_category
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Categories"
+msgstr "Danh mục"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_category
+msgid "Categories are used to categorize Documents."
+msgstr "Danh mục được sử dụng để phân loại tài liệu."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__category_id
+#: model:ir.model.fields,field_description:dms.field_dms_tag__category_id
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Category"
+msgstr "Danh mục"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_category_name_uniq
+msgid "Category name already exists!"
+msgstr "Tên danh mục đã tồn tại!"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__checksum
+msgid "Checksum/SHA1"
+msgstr "Checksum/SHA1"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__child_category_ids
+msgid "Child Categories"
+msgstr "Danh mục con"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__child_group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Child Groups"
+msgstr "Nhóm con"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_storage
+msgid "Click to add a new directory."
+msgstr "Nhấp để thêm thư mục mới."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_storage
+msgid "Click to add a new file."
+msgstr "Nhấp để thêm tệp mới."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_tag
+msgid "Click to create a new tag."
+msgstr "Nhấp để tạo thẻ mới."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__closed
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__closed
+msgid "Closed"
+msgstr "Đã đóng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__color
+#: model:ir.model.fields,field_description:dms.field_dms_directory__color
+#: model:ir.model.fields,field_description:dms.field_dms_file__color
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Color"
+msgstr "Màu sắc"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_tag__color
+msgid "Color Index"
+msgstr "Chỉ số màu"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__company_id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Complete Groups"
+msgstr "Nhóm hoàn chỉnh"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__complete_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__complete_name
+msgid "Complete Name"
+msgstr "Tên đầy đủ"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__complete_directory_ids
+msgid "Complete directories"
+msgstr "Thư mục hoàn chỉnh"
+
+#. module: dms
+#: model:ir.model,name:dms.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cài đặt cấu hình"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content
+msgid "Content"
+msgstr "Nội dung"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content_binary
+msgid "Content Binary"
+msgstr "Nội dung nhị phân"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__content_file
+msgid "Content File"
+msgstr "Nội dung tệp"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_11_demo
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: dms
+#: model:dms.category,name:dms.category_03_demo
+msgid "Contracts"
+msgstr "Hợp đồng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__count_directories
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_directories
+#: model:ir.model.fields,field_description:dms.field_dms_storage__count_storage_directories
+#: model:ir.model.fields,field_description:dms.field_dms_tag__count_directories
+msgid "Count Directories"
+msgstr "Số lượng thư mục"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_elements
+msgid "Count Elements"
+msgstr "Số lượng phần tử"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_files
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_files_title
+#: model:ir.model.fields,field_description:dms.field_dms_storage__count_storage_files
+#: model:ir.model.fields,field_description:dms.field_dms_tag__count_files
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__count_files
+msgid "Count Files"
+msgstr "Số lượng tệp"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_files
+msgid "Count Files Title"
+msgstr "Số lượng tiêu đề tệp"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_categories
+msgid "Count Subcategories"
+msgstr "Số lượng danh mục con"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_directories_title
+msgid "Count Subdirectories"
+msgstr "Số lượng thư mục con"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_directories
+msgid "Count Subdirectories Title"
+msgstr "Số lượng tiêu đề thư mục con"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__count_tags
+msgid "Count Tags"
+msgstr "Số lượng thẻ"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__count_users
+msgid "Count Users"
+msgstr "Số lượng người dùng"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_new_form
+msgid "Create"
+msgstr "Tạo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_create
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_create
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_create
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_create
+msgid "Create Access"
+msgstr "Quyền tạo"
+
+#. module: dms
+#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_create_directory
+msgid "Create Directory"
+msgstr "Tạo thư mục"
+
+#. module: dms
+#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_document_storage
+msgid "Create Storage"
+msgstr "Tạo bộ lưu trữ"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_category
+msgid "Create a new Category."
+msgstr "Tạo danh mục mới."
+
+#. module: dms
+#: model:onboarding.onboarding.step,description:dms.onboarding_step_document_storage
+msgid "Create a new Document Storage."
+msgstr "Tạo bộ lưu trữ tài liệu mới."
+
+#. module: dms
+#: model:onboarding.onboarding.step,description:dms.onboarding_step_create_directory
+msgid "Create a new Root Directory."
+msgstr "Tạo thư mục gốc mới."
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_storage
+msgid "Create a new Storage object."
+msgstr "Tạo đối tượng lưu trữ mới."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_storage__include_message_attachments
+msgid "Create files from message attachments"
+msgstr "Tạo tệp từ các tệp đính kèm của tin nhắn"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_category__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_storage__create_uid
+#: model:ir.model.fields,field_description:dms.field_dms_tag__create_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__create_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_category__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_file__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_storage__create_date
+#: model:ir.model.fields,field_description:dms.field_dms_tag__create_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__create_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Creation Date"
+msgstr "Ngày tạo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__save_type
+msgid "Current Save Type"
+msgstr "Kiểu lưu hiện tại"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_bounced_content
+msgid "Custom Bounced Message"
+msgstr "Tin nhắn từ chối tùy chỉnh"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_01_demo
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_08_demo
+msgid "Customer Invoice"
+msgstr "Hóa đơn khách hàng"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__access_url
+#: model:ir.model.fields,help:dms.field_dms_file__access_url
+msgid "Customer Portal URL"
+msgstr "URL cổng khách hàng"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+msgid "DMS"
+msgstr "DMS"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_security_mixin
+msgid "DMS Security Mixin"
+msgstr "Kết hợp bảo mật DMS"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_mixins_thumbnail
+msgid "DMS thumbnail and icon mixin"
+msgstr "Mixin cho hình thu nhỏ và biểu tượng DMS"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__database
+#, python-format
+msgid "Database"
+msgstr "Cơ sở dữ liệu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_defaults
+msgid "Default Values"
+msgstr "Giá trị mặc định"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Define forbidden file extensions"
+msgstr "Xác định các phần mở rộng tệp cần loại trừ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Define the maximum upload size of a file in MB"
+msgstr "Xác định kích thước tối đa để tải lên tệp tính bằng MB"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_config_settings__documents_forbidden_extensions
+msgid "Defines a list of forbidden file extensions. (Example: 'exe,msi')"
+msgstr "Xác định các phần mở rộng tệp cần loại trừ. (Ví dụ: 'exe, msi')"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_res_config_settings__documents_binary_max_size
+msgid "Defines the maximum upload size in MB. Default (25MB)"
+msgstr "Xác định kích thước tối đa để tải lên tính bằng MB. Mặc định (25MB)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_unlink
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_unlink
+msgid "Delete Access"
+msgstr "Quyền xóa"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directories_storage
+#: model:ir.actions.act_window,name:dms.action_dms_directory
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_category__directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__storage_directory_ids
+#: model:ir.model.fields,field_description:dms.field_dms_tag__directory_ids
+#: model:ir.ui.menu,name:dms.menu_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Directories"
+msgstr "Thư mục"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directories_storage
+#: model_terms:ir.actions.act_window,help:dms.action_dms_directory
+msgid ""
+"Directories can be used to structure and organize\n"
+"                files directly in Odoo."
+msgstr ""
+"Thư mục có thể được sử dụng để cấu trúc và tổ chức\n"
+"                tệp trực tiếp trong Odoo."
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_directory
+#: model:ir.model.fields,field_description:dms.field_dms_file__directory_id
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__directory_id
+#: model:onboarding.onboarding.step,title:dms.onboarding_step_create_directory
+msgid "Directory"
+msgstr "Thư mục"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_category__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_file__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_storage__display_name
+#: model:ir.model.fields,field_description:dms.field_dms_tag__display_name
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__display_name
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_category
+msgid "Document Category"
+msgstr "Danh mục tài liệu"
+
+#. module: dms
+#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_document_storage
+msgid "Document Storage Created!"
+msgstr "Đã tạo bộ lưu trữ tài liệu!"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_tag
+msgid "Document Tag"
+msgstr "Nhãn tài liệu"
+
+#. module: dms
+#: model:ir.module.category,name:dms.category_dms_security
+#: model:ir.ui.menu,name:dms.main_menu_dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_home_dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Documents"
+msgstr "Tài liệu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_directory_state
+msgid "Documents Onboarding Directory State"
+msgstr "Trạng thái hành trình tích hợp thư mục"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_file_state
+msgid "Documents Onboarding File State"
+msgstr "Trạng thái hành trình tích hợp tệp"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_state
+msgid "Documents Onboarding State"
+msgstr "Trạng thái hành trình tích hợp"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_company__documents_onboarding_storage_state
+msgid "Documents Onboarding Storage State"
+msgstr "Trạng thái hành trình tích hợp lưu trữ tài liệu"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__done
+msgid "Done"
+msgstr "Hoàn thành"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_lock_editor
+msgid "Editor"
+msgstr "Trình chỉnh sửa"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Elements"
+msgstr "Phần tử"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_email
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Email Alias"
+msgstr "Email thay thế"
+
+#. module: dms
+#: model:ir.model,name:dms.model_mail_thread
+msgid "Email Thread"
+msgstr "Thảo luận qua email"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_domain
+msgid "Email domain e.g. 'example.com' in 'odoo@example.com'"
+msgstr "Tên miền email ví dụ 'example.com' trong 'odoo@example.com'"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_category.py:0
+#, python-format
+msgid "Error! You cannot create recursive categories."
+msgstr "Lỗi! Bạn không thể tạo danh mục đệ quy."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "Error! You cannot create recursive directories."
+msgstr "Lỗi! Bạn không thể tạo danh mục đệ quy."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__explicit_user_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Explicit Users"
+msgstr "Người dùng rõ ràng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__extension
+msgid "Extension"
+msgstr "Phần mở rộng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_res_config_settings__documents_forbidden_extensions
+msgid "Extensions"
+msgstr "Các phần mở rộng"
+
+#. module: dms
+#: model:dms.category,name:dms.category_05_demo
+msgid "External"
+msgstr "Bên ngoài"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_file
+#: model:onboarding.onboarding.step,title:dms.onboarding_step_upload_file
+msgid "File"
+msgstr "Tệp"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Extensions"
+msgstr "Phần mở rộng tệp"
+
+#. module: dms
+#: model:onboarding.onboarding,name:dms.onboarding_onboarding_dms_file
+msgid "File Onboarding"
+msgstr "Hành trình tích hợp tệp"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Size"
+msgstr "Kích thước tệp"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "File Upload"
+msgstr "Tải lên tệp"
+
+#. module: dms
+#: model:ir.model,name:dms.model_ir_binary
+msgid "File streaming helper model for controllers"
+msgstr "Mẫu hỗ trợ bộ điều khiển - Streaming tệp"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_file
+#: model:ir.actions.act_window,name:dms.action_dms_file_migration
+#: model:ir.actions.act_window,name:dms.action_dms_file_storage_migration
+#: model:ir.actions.act_window,name:dms.action_dms_file_wizard_selector
+#: model:ir.actions.act_window,name:dms.action_dms_files_all_directory
+#: model:ir.actions.act_window,name:dms.action_dms_files_directory
+#: model:ir.actions.act_window,name:dms.action_dms_files_storage
+#: model:ir.model.fields,field_description:dms.field_dms_category__file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__storage_file_ids
+#: model:ir.model.fields,field_description:dms.field_dms_tag__file_ids
+#: model:ir.ui.menu,name:dms.menu_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Files"
+msgstr "Tệp"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_file_storage_migration
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_all_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_directory
+#: model_terms:ir.actions.act_window,help:dms.action_dms_files_storage
+msgid "Files are used to save content directly in Odoo."
+msgstr ""
+"Tệp được sử dụng để lưu nội dung trực tiếp trong Odoo."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#: model:ir.model.fields.selection,name:dms.selection__dms_storage__save_type__file
+#, python-format
+msgid "Filestore"
+msgstr "Lưu trữ tệp"
+
+#. module: dms
+#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_upload_file
+msgid "First File Uploaded!"
+msgstr "Tệp đầu tiên đã được tải lên!"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_follower_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_partner_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_type_icon
+#: model:ir.model.fields,help:dms.field_dms_file__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font awesome ví dụ: fa-tasks"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_settings_general
+#: model:ir.ui.menu,name:dms.menu_dms_settings_general
+msgid "General Settings"
+msgstr "Cài đặt chung"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Group"
+msgstr "Nhóm"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_search
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__name
+msgid "Group Name"
+msgstr "Tên nhóm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__users
+msgid "Group Users"
+msgstr "Người dùng nhóm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__group_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__group_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Groups"
+msgstr "Nhóm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__has_message
+#: model:ir.model.fields,field_description:dms.field_dms_file__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: dms
+#: model:dms.category,name:dms.category_02_demo
+msgid "Human Resource"
+msgstr "Nhân sự"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__id
+#: model:ir.model.fields,field_description:dms.field_dms_category__id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__id
+#: model:ir.model.fields,field_description:dms.field_dms_file__id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__id
+#: model:ir.model.fields,field_description:dms.field_dms_tag__id
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__id
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__id
+msgid "ID"
+msgstr "ID"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task "
+"creation alias)"
+msgstr ""
+"ID của bản ghi cha chứa tên gọi khác (ví dụ: dự án chứa tên gọi khác để tạo nhiệm vụ)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_exception_icon
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_exception_icon
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_kanban
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__icon_url
+#: model:ir.model.fields,field_description:dms.field_dms_file__icon_url
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__icon_url
+msgid "Icon URL"
+msgstr "URL biểu tượng"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_exception_icon
+#: model:ir.model.fields,help:dms.field_dms_file__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng để chỉ ra hoạt động ngoại lệ."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_file__active
+msgid "If a file is set to archived, it is not displayed, but still exists."
+msgstr ""
+"Nếu một tệp được đặt thành lưu trữ, nó sẽ không được hiển thị, nhưng vẫn "
+"tồn tại."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_needaction
+#: model:ir.model.fields,help:dms.field_dms_file__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, tin nhắn mới cần sự chú ý của bạn."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_error
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn có lỗi giao hàng."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__company_id
+#: model:ir.model.fields,help:dms.field_dms_directory__company_id
+#: model:ir.model.fields,help:dms.field_dms_file__company_id
+#: model:ir.model.fields,help:dms.field_dms_storage__company_id
+msgid ""
+"If set, directories and files will only be available for the selected "
+"company."
+msgstr ""
+"Nếu được đặt, các thư mục và tệp sẽ chỉ khả dụng "
+"cho công ty được chọn."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_bounced_content
+msgid ""
+"If set, this content will automatically be sent out to unauthorized users "
+"instead of the default message."
+msgstr ""
+"Nếu được đặt, nội dung này sẽ tự động được gửi đến những người dùng không "
+"được ủy quyền thay vì tin nhắn mặc định."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_1920
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_1920
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_1920
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_1024
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_1024
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_1024
+msgid "Image 1024"
+msgstr "Hình ảnh 1024"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_128
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_128
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_128
+msgid "Image 128"
+msgstr "Hình ảnh 128"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_256
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_256
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_256
+msgid "Image 256"
+msgstr "Hình ảnh 256"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__image_512
+#: model:ir.model.fields,field_description:dms.field_dms_file__image_512
+#: model:ir.model.fields,field_description:dms.field_dms_mixins_thumbnail__image_512
+msgid "Image 512"
+msgstr "Hình ảnh 512"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__storage_id_inherit_access_from_parent_record
+#: model:ir.model.fields,help:dms.field_dms_storage__inherit_access_from_parent_record
+msgid ""
+"Indicate if directories and files access work only with related model access "
+"(for example, if some directories are related with any sale, only users with "
+"read access to these sale can access)"
+msgstr ""
+"Chỉ ra rằng quyền truy cập vào thư mục và tệp chỉ hoạt động "
+"với quyền truy cập vào các Mẫu liên quan (ví dụ: nếu một số thư mục được "
+"liên kết với bán hàng, chỉ những người dùng có quyền đọc những "
+"doanh số đó mới có thể truy cập chúng)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_storage__include_message_attachments
+msgid ""
+"Indicate if directories and files auto-create in mail composition process too"
+msgstr ""
+"Chỉ ra rằng thư mục và tệp cũng được tạo "
+"tự động trong quá trình soạn thảo thư"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_directory__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_file__is_hidden
+#: model:ir.model.fields,help:dms.field_dms_storage__is_hidden
+msgid "Indicates if directories and files are hidden by default."
+msgstr "Cho biết liệu thư mục và tệp có bị ẩn theo mặc định hay không."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__is_root_directory
+msgid ""
+"Indicates if the directory is a root directory.\n"
+"        A root directory has a settings object, while a directory with a "
+"set\n"
+"        parent inherits the settings form its parent."
+msgstr ""
+"Cho biết thư mục này có phải là thư mục gốc hay không.\n"
+"        Thư mục gốc có các tham số, trong khi thư mục có "
+"cha được xác định\n"
+"        kế thừa các tham số từ cha của nó."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__inherit_group_ids
+msgid "Inherit Groups"
+msgstr "Kế thừa nhóm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id_inherit_access_from_parent_record
+#: model:ir.model.fields,field_description:dms.field_dms_storage__inherit_access_from_parent_record
+msgid "Inherit permissions from related record"
+msgstr "Kế thừa quyền từ bản ghi liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_create
+msgid "Inherited Create Access"
+msgstr "Quyền tạo được kế thừa"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_unlink
+msgid "Inherited Unlink Access"
+msgstr "Quyền xóa được kế thừa"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_inclusive_write
+msgid "Inherited Write Access"
+msgstr "Quyền ghi được kế thừa"
+
+#. module: dms
+#: model:dms.category,name:dms.category_01_demo
+msgid "Internal"
+msgstr "Nội bộ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Internal / Human Resource"
+msgstr "Nội bộ / Nhân sự"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Invalid attachments!"
+msgstr "Tệp đính kèm không hợp lệ!"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Invoices"
+msgstr "Hóa đơn"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_is_follower
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_is_follower
+msgid "Is Follower"
+msgstr "Đã đăng ký"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_root_directory
+msgid "Is Root Directory"
+msgstr "Là thư mục gốc"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "It is not possible to change the storage."
+msgstr "Không thể sửa đổi bộ lưu trữ."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "It is not possible to change to a parent with other storage."
+msgstr "Không thể chuyển sang thư mục cha với bộ lưu trữ khác."
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__just_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__just_done
+msgid "Just done"
+msgstr "Vừa thực hiện"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_category__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_directory__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_file__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_storage__write_uid
+#: model:ir.model.fields,field_description:dms.field_dms_tag__write_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__write_uid
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_category__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_directory__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_file__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_storage__write_date
+#: model:ir.model.fields,field_description:dms.field_dms_tag__write_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_file_move__write_date
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Last update"
+msgstr "Cập nhật lần cuối"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__share_link
+msgid "Link"
+msgstr "Liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__allowed_model_ids
+#: model:ir.model.fields,field_description:dms.field_dms_storage__model_ids
+msgid "Linked Models"
+msgstr "Mẫu liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__res_model
+#: model:ir.model.fields,field_description:dms.field_dms_file__res_model
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__res_model
+msgid "Linked attachments model"
+msgstr "Mẫu tệp đính kèm liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__res_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__res_id
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__res_id
+msgid "Linked attachments record ID"
+msgstr "ID bản ghi tệp đính kèm liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_incoming_local
+msgid "Local-part based incoming detection"
+msgstr "Phát hiện đến dựa trên phần cục bộ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Lock"
+msgstr "Khóa"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_locked
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Locked"
+msgstr "Đã khóa"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__locked_by
+msgid "Locked By"
+msgstr "Bị khóa bởi"
+
+#. module: dms
+#: model:res.groups,name:dms.group_dms_manager
+msgid "Manager"
+msgstr "Quản lý"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Manual File Migration"
+msgstr "Di chuyển tệp thủ công"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_error
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi giao hàng tin nhắn"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Meta Information"
+msgstr "Thông tin meta"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.action_dms_attachment_migrate
+msgid "Migrate"
+msgstr "Di chuyển"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Migrate File %(index)s of %(record_count)s [ %(dms_file_migration)s ]"
+msgstr ""
+"Di chuyển tệp %(index)s của %(record_count)s [ %(dms_file_migration)s ]"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Migrate Files"
+msgstr "Di chuyển tệp"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.menu_dms_file_migration
+msgid "Migration"
+msgstr "Di chuyển"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__migration
+msgid "Migration Status"
+msgstr "Trạng thái di chuyển"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__model_id
+#: model:ir.model.fields,field_description:dms.field_dms_storage__model
+msgid "Model"
+msgstr "Mẫu"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "Modification Date"
+msgstr "Ngày sửa đổi"
+
+#. module: dms
+#: model:ir.actions.server,name:dms.action_wizard_dms_file_move
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Move"
+msgstr "Di chuyển"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.wizard_dms_file_move_act_window
+msgid "Move files"
+msgstr "Di chuyển tệp"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__my_activity_date_deadline
+#: model:ir.model.fields,field_description:dms.field_dms_file__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+msgid "My Directories"
+msgstr "Thư mục của tôi"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "My Documents"
+msgstr "Tệp của tôi"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+msgid "My Files"
+msgstr "Tệp của tôi"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/controllers/portal.py:0
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__name
+#: model:ir.model.fields,field_description:dms.field_dms_category__name
+#: model:ir.model.fields,field_description:dms.field_dms_directory__name
+#: model:ir.model.fields,field_description:dms.field_dms_file__name
+#: model:ir.model.fields,field_description:dms.field_dms_storage__name
+#: model:ir.model.fields,field_description:dms.field_dms_tag__name
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+#, python-format
+msgid "Name"
+msgstr "Tên"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directory_new
+#: model:ir.actions.act_window,name:dms.action_dms_file_new
+msgid "New Root Directory"
+msgstr "Thư mục gốc mới"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_storage_new
+msgid "New Storage"
+msgstr "Bộ lưu trữ mới"
+
+#. module: dms
+#: model:dms.category,name:dms.category_06_demo
+msgid "News"
+msgstr "Tin tức"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_date_deadline
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót hoạt động tiếp theo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_summary
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_type_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "No attachment was provided"
+msgstr "Không có tệp đính kèm nào được cung cấp"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_directory_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_file_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_state__not_done
+#: model:ir.model.fields.selection,name:dms.selection__res_company__documents_onboarding_storage_state__not_done
+msgid "Not done"
+msgstr "Chưa hoàn tất"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "Not results"
+msgstr "Không có kết quả"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_needaction_counter
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__message_has_error_counter
+#: model:ir.model.fields,field_description:dms.field_dms_file__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_needaction_counter
+#: model:ir.model.fields,help:dms.field_dms_file__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số lượng tin nhắn cần hành động"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__message_has_error_counter
+#: model:ir.model.fields,help:dms.field_dms_file__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi giao hàng"
+
+#. module: dms
+#: model:ir.model,name:dms.model_onboarding_onboarding
+msgid "Onboarding"
+msgstr "Hành trình tích hợp"
+
+#. module: dms
+#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_create_directory
+msgid "Onboarding Directory"
+msgstr "Đường dẫn tích hợp thư mục"
+
+#. module: dms
+#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_upload_file
+msgid "Onboarding File"
+msgstr "Đường dẫn tích hợp tệp"
+
+#. module: dms
+#: model:ir.model,name:dms.model_onboarding_onboarding_step
+msgid "Onboarding Step"
+msgstr "Bước hướng dẫn tích hợp"
+
+#. module: dms
+#: model:onboarding.onboarding.step,step_image_alt:dms.onboarding_step_document_storage
+msgid "Onboarding Storage"
+msgstr "Hướng dẫn tích hợp cho bộ lưu trữ"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "Only files in the same root directory can be moved."
+msgstr "Chỉ có thể di chuyển các tệp từ cùng thư mục gốc."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/storage.py:0
+#, python-format
+msgid "Only managers can execute this action."
+msgstr "Chỉ quản trị viên mới có thể thực hiện hành động này."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr ""
+"ID tùy chọn của một chủ đề (bản ghi) mà tất cả các "
+"tin nhắn đến sẽ được đính kèm, ngay cả khi họ không trả lời. Nếu được "
+"đặt, điều này sẽ vô hiệu hóa hoàn toàn việc tạo "
+"bản ghi mới."
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config_organizing
+msgid "Organizing"
+msgstr "Tổ chức"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_category__parent_id
+msgid "Parent Category"
+msgstr "Danh mục cha"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__parent_id
+msgid "Parent Directory"
+msgstr "Thư mục cha"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__parent_group_id
+msgid "Parent Group"
+msgstr "Nhóm các thư mục cha"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_parent_model_id
+msgid "Parent Model"
+msgstr "Mẫu cha"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__parent_path
+#: model:ir.model.fields,field_description:dms.field_dms_category__parent_path
+#: model:ir.model.fields,field_description:dms.field_dms_directory__parent_path
+msgid "Parent Path"
+msgstr "Đường dẫn cha"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "ID bản ghi chủ đề cha"
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/access_groups.py:0
+#, python-format
+msgid "Parent group '%(parent)s' is child of '%(current)s'."
+msgstr "Nhóm cha '%(parent)s' là con của '%(current)s'."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not "
+"necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr ""
+"Mô hình cha chứa tên gọi khác. Mô hình chứa tham chiếu tên gọi khác "
+"không nhất thiết phải là mô hình được cung cấp bởi alias_model_id (ví dụ: "
+"dự án (parent_model) và nhiệm vụ (model))"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_02_demo
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__path_json
+msgid "Path Json"
+msgstr "Đường dẫn Json"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__path_names
+msgid "Path Names"
+msgstr "Tên đường dẫn"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following "
+"channels\n"
+msgstr ""
+"Chính sách đăng tin nhắn trên tài liệu sử dụng "
+"cổng thư điện tử.\n"
+"- mọi người: mọi người đều có thể đăng\n"
+"- đối tác: chỉ các đối tác đã xác thực\n"
+"- người theo dõi (followers): chỉ những người theo dõi tài liệu liên quan hoặc "
+"thành viên của các kênh theo dõi\n"
+
+#. module: dms
+#: model:dms.access.group,name:dms.access_group_02_demo
+#: model:dms.tag,name:dms.tag_05_demo
+msgid "Portal"
+msgstr "Cổng thông tin"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_url
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_url
+msgid "Portal Access URL"
+msgstr "Cổng truy cập URL"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/fields/preview_binary/preview_record.xml:0
+#, python-format
+msgid "Preview"
+msgstr "Xem trước"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_10_demo
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_03_demo
+msgid "Project"
+msgstr "Dự án"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_read
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_read
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_read
+msgid "Read Access"
+msgstr "Quyền xem"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__partner_ids
+msgid "Recipients"
+msgstr "Người nhận"
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_access_group
+msgid "Record Access Groups"
+msgstr "Quyền truy cập bản ghi nhóm"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__record_ref
+#: model:ir.model.fields,field_description:dms.field_dms_file__record_ref
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__record_ref
+msgid "Record Referenced"
+msgstr "Bản ghi được tham chiếu"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "ID bản ghi chủ đề"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__resource_ref
+msgid "Related Document"
+msgstr "Tệp liên quan"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__res_id
+msgid "Related Document ID"
+msgstr "ID tài liệu liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_wizard_dms_share__res_model
+msgid "Related Document Model"
+msgstr "Mẫu tài liệu liên kết"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__require_migration
+msgid "Require Migration"
+msgstr "Migration requise"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__activity_user_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__activity_user_id
+msgid "Responsible User"
+msgstr "Người dùng phụ trách"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_storage__root_directory_ids
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Root Directories"
+msgstr "Thư mục gốc"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__root_directory_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__root_directory_id
+msgid "Root Directory"
+msgstr "Thư mục gốc"
+
+#. module: dms
+#: model:onboarding.onboarding.step,done_text:dms.onboarding_step_create_directory
+msgid "Root Directory Created!"
+msgstr "Thư mục gốc đã được tạo!"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_04_demo
+msgid "Sales"
+msgstr "Bán hàng"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id_save_type
+#: model:ir.model.fields,field_description:dms.field_dms_storage__save_type
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_search
+msgid "Save Type"
+msgstr "Lưu loại"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/file_kanban_renderer.xml:0
+#: code:addons/dms/static/src/js/views/file_list_renderer.xml:0
+#, python-format
+msgid "Scan"
+msgstr "Quét"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__access_token
+#: model:ir.model.fields,field_description:dms.field_dms_file__access_token
+msgid "Security Token"
+msgstr "Mã thông báo bảo mật"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Settings"
+msgstr "Cài đặt"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.wizard_dms_directory_share_action
+#: model:ir.actions.act_window,name:dms.wizard_dms_file_share_action
+msgid "Share"
+msgstr "Chia sẻ"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Show storages"
+msgstr "Hiển thị bộ lưu trữ"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__dms_directory__alias_process__files
+msgid "Single Files"
+msgstr "Tệp đơn"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__size
+#: model:ir.model.fields,field_description:dms.field_dms_file__size
+#: model:ir.model.fields,field_description:dms.field_res_config_settings__documents_binary_max_size
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_migration_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_tree
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_storage_form
+msgid "Size"
+msgstr "Kích thước"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__human_size
+#: model:ir.model.fields,field_description:dms.field_dms_file__human_size
+msgid "Size (human readable)"
+msgstr "Kích thước (được quyền đọc)"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__starred
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid "Starred"
+msgstr "Yêu thích"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+msgid "Starred Directories"
+msgstr "Thư mục yêu thích"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__user_star_ids
+msgid "Stars"
+msgstr "Yêu thích"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_state
+#: model:ir.model.fields,help:dms.field_dms_file__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên các hoạt động\n"
+"Quá hạn: Đã qua ngày đến hạn\n"
+"Hôm nay: Hoạt động diễn ra trong ngày hôm nay\n"
+"Kế hoạch: Các hoạt động trong tương lai."
+
+#. module: dms
+#: model:ir.model,name:dms.model_dms_storage
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__storage_id
+#: model:ir.model.fields,field_description:dms.field_dms_directory__storage_id
+#: model:ir.model.fields,field_description:dms.field_dms_file__storage_id
+#: model:onboarding.onboarding.step,title:dms.onboarding_step_document_storage
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_directory
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file
+#: model_terms:ir.ui.view,arch_db:dms.search_dms_file_migration
+msgid "Storage"
+msgstr "Lưu trữ"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_abstract_dms_mixin__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_directory__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_file__is_hidden
+#: model:ir.model.fields,field_description:dms.field_dms_storage__is_hidden
+msgid "Storage is Hidden"
+msgstr "Bộ lưu trữ bị ẩn"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_storage
+#: model:ir.ui.menu,name:dms.menu_dms_storage
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "Storages"
+msgstr "Các bộ lưu trữ"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_storage
+msgid "Storages are used to configure your Documents."
+msgstr "Bộ lưu trữ được sử dụng để cấu hình tài liệu của bạn."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Subcategories"
+msgstr "Danh mục con"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_directories_all_directory
+#: model:ir.actions.act_window,name:dms.action_dms_directories_directory
+#: model:ir.model.fields,field_description:dms.field_dms_directory__child_directory_ids
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "Subdirectories"
+msgstr "Thư mục con"
+
+#. module: dms
+#: model:ir.model.fields.selection,name:dms.selection__dms_directory__alias_process__directory
+msgid "Subdirectory"
+msgstr "Thư mục con"
+
+#. module: dms
+#: model:ir.ui.menu,name:dms.cat_menu_dms_config_system
+msgid "System"
+msgstr "Hệ thống"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_tag_form
+msgid "Tag"
+msgstr "Nhãn"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_tag_name_uniq
+msgid "Tag name already exists!"
+msgstr "Tên nhãn đã tồn tại!"
+
+#. module: dms
+#: model:ir.actions.act_window,name:dms.action_dms_tag
+#: model:ir.model.fields,field_description:dms.field_dms_category__tag_ids
+#: model:ir.model.fields,field_description:dms.field_dms_directory__tag_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__tag_ids
+#: model:ir.ui.menu,name:dms.menu_dms_tag
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_category_form
+msgid "Tags"
+msgstr "Thẻ"
+
+#. module: dms
+#: model_terms:ir.actions.act_window,help:dms.action_dms_tag
+msgid "Tags are used to categorize Documents."
+msgstr "Nhãn được sử dụng để phân loại tài liệu."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_new_form
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Tags..."
+msgstr "Nhãn..."
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Technical Information"
+msgstr "Thông tin kĩ thuật
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_category__active
+msgid "The active field allows you to hide the category without removing it."
+msgstr "Trường hoạt động cho phép bạn ẩn danh mục mà không xóa nó."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_tag__active
+msgid "The active field allows you to hide the tag without removing it."
+msgstr "Trường hoạt động cho phép bạn ẩn nhãn mà không xóa nó."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "The directory name is invalid."
+msgstr "Tên thư mục không hợp lệ."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The file has a forbidden file extension."
+msgstr "Tệp có phần mở rộng bị cấm."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The file name is invalid."
+msgstr "Tên tệp không hợp lệ."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/dms_file.py:0
+#, python-format
+msgid "The maximum upload size is %s MB."
+msgstr "Kích thước tải lên tối đa là %s MB."
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming "
+"email that does not reply to an existing record will cause the creation of a "
+"new record of this model (e.g. a Project Task)"
+msgstr ""
+"Mô hình (Loại tài liệu Odoo) mà tên gọi khác này tương ứng. Mọi email "
+"đến không trả lời bản ghi hiện có sẽ dẫn đến việc "
+"tạo bản ghi mới của mô hình này (ví dụ: nhiệm vụ của "
+"dự án)"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr ""
+"Tên của email thay thế, ví dụ: 'jobs' nếu bạn muốn nhận email cho <jobs@example.odoo.com>"
+
+#. module: dms
+#: model:ir.model.constraint,message:dms.constraint_dms_access_group_name_uniq
+msgid "The name of the group must be unique!"
+msgstr "Tên nhóm phải là duy nhất!"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_abstract_dms_mixin__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_directory__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_file__storage_id_save_type
+#: model:ir.model.fields,help:dms.field_dms_storage__save_type
+msgid ""
+"The save type is used to determine how a file is saved by the system. If you "
+"change this setting, you can migrate existing files manually by triggering "
+"the action."
+msgstr ""
+"Loại lưu trữ được sử dụng để xác định cách một tệp được "
+"lưu trữ bởi hệ thống. Nếu bạn thay đổi cài đặt này, bạn có thể di chuyển "
+"các tệp hiện có bằng cách kích hoạt hành động theo cách thủ công."
+
+#. module: dms
+#. odoo-python
+#: code:addons/dms/models/directory.py:0
+#, python-format
+msgid "This directory needs to be associated to a record."
+msgstr "Thư mục này phải được liên kết với một bản ghi."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_elements
+msgid "Total Elements"
+msgstr "Tổng số phần tử
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_files
+msgid "Total Files"
+msgstr "Tổng số tệp"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__count_total_directories
+msgid "Total Subdirectories"
+msgstr "Tổng số Thư mục con"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.wizard_dms_file_move_form_view
+msgid "Total files"
+msgstr "Tổng số file"
+
+#. module: dms
+#: model:dms.category,name:dms.category_04_demo
+msgid "Traveling"
+msgstr "Du lịch"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_file__mimetype
+msgid "Type"
+msgstr "Loại"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__activity_exception_decoration
+#: model:ir.model.fields,help:dms.field_dms_file__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ được ghi lại."
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_unlink
+msgid "Unlink Access"
+msgstr "Quyền xóa"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_file_form
+msgid "Unlock"
+msgstr "Mở khóa"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__alias_process
+msgid "Unpack Emails as"
+msgstr "Giải nén email dưới dạng"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/file_kanban_controller.xml:0
+#: code:addons/dms/static/src/js/views/file_kanban_renderer.xml:0
+#: code:addons/dms/static/src/js/views/file_list_renderer.xml:0
+#, python-format
+msgid "Upload"
+msgstr "Thêm"
+
+#. module: dms
+#: model:onboarding.onboarding.step,button_text:dms.onboarding_step_upload_file
+msgid "Upload File"
+msgstr "Thêm tệp"
+
+#. module: dms
+#: model:onboarding.onboarding.step,description:dms.onboarding_step_upload_file
+msgid "Upload your first File."
+msgstr "Thêm tệp đầu tiên của bạn."
+
+#. module: dms
+#: model:dms.access.group,name:dms.access_group_03_demo
+#: model:res.groups,name:dms.group_dms_user
+msgid "User"
+msgstr "Chỉ quản trị viên"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_access_groups_form
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: dms
+#: model:dms.tag,name:dms.tag_09_demo
+msgid "Vendor Bill"
+msgstr "Hóa đơn nhà cung cấp"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_kanban
+msgid "Views"
+msgstr "Chế độ xem"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_directory__website_message_ids
+#: model:ir.model.fields,field_description:dms.field_dms_file__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: dms
+#: model:ir.model.fields,help:dms.field_dms_directory__website_message_ids
+#: model:ir.model.fields,help:dms.field_dms_file__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp trang web"
+
+#. module: dms
+#: model:ir.model,name:dms.model_wizard_dms_file_move
+msgid "Di chuyển Tệp Wizard Dms"
+msgstr "Hướng dẫn di chuyển tệp Dms"
+
+#. module: dms
+#: model:ir.model,name:dms.model_wizard_dms_share
+msgid "Wizard for sharing DMS records"
+msgstr "Hướng dẫn để chia sẻ bản ghi"
+
+#. module: dms
+#: model:ir.model.fields,field_description:dms.field_dms_access_group__perm_write
+#: model:ir.model.fields,field_description:dms.field_dms_directory__permission_write
+#: model:ir.model.fields,field_description:dms.field_dms_file__permission_write
+#: model:ir.model.fields,field_description:dms.field_dms_security_mixin__permission_write
+msgid "Write Access"
+msgstr "Quyền sửa đổi"
+
+#. module: dms
+#. odoo-javascript
+#: code:addons/dms/static/src/js/views/dms_file_upload.esm.js:0
+#, python-format
+msgid "You must select a directory first"
+msgstr "Bạn phải chọn thư mục trước"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.portal_my_dms
+msgid "element(s)"
+msgstr "phần tử"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.res_config_settings_view_form
+msgid "exe,msi"
+msgstr "exe,msi"
+
+#. module: dms
+#: model_terms:ir.ui.view,arch_db:dms.view_dms_directory_form
+msgid "mail.catchall.domain"
+msgstr "mail.catchall.domain"
